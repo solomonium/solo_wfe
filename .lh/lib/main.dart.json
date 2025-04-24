@@ -1,0 +1,18 @@
+{
+    "sourceFile": "lib/main.dart",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 0,
+            "patches": [
+                {
+                    "date": 1745498897755,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                }
+            ],
+            "date": 1745498897755,
+            "name": "Commit-0",
+            "content": "import 'package:flutter/material.dart';\n\nvoid main() {\n  runApp(const MyApp());\n}\n\nclass MyApp extends StatelessWidget {\n  const MyApp({super.key});\n\n  // This widget is the root of your application.\n  @override\n  Widget build(BuildContext context) {\n    return MaterialApp(\n      title: 'Flutter Demo',\n      theme: ThemeData(\n       \n        colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),\n      ),\n      home: const MyHomePage(title: 'Flutter Demo Home Page'),\n    );\n  }\n}\n\nclass MyHomePage extends StatefulWidget {\n  const MyHomePage({super.key, required this.title});\n\n \n  final String title;\n\n  @override\n  State<MyHomePage> createState() => _MyHomePageState();\n}\n\nclass _MyHomePageState extends State<MyHomePage> {\n  int _counter = 0;\n\n  void _incrementCounter() {\n    setState(() {\n     \n      _counter++;\n    });\n  }\n\n  @override\n  Widget build(BuildContext context) {\n    \n    return Scaffold(\n      appBar: AppBar(\n     \n        backgroundColor: Theme.of(context).colorScheme.inversePrimary,\n\n        title: Text(widget.title),\n      ),\n      body: Center(\n      \n        child: Column(\n    \n          mainAxisAlignment: MainAxisAlignment.center,\n          children: <Widget>[\n            const Text('You have pushed the button this many times:'),\n            Text(\n              '$_counter',\n              style: Theme.of(context).textTheme.headlineMedium,\n            ),\n          ],\n        ),\n      ),\n      floatingActionButton: FloatingActionButton(\n        onPressed: _incrementCounter,\n        tooltip: 'Increment',\n        child: const Icon(Icons.add),\n      ), // This trailing comma makes auto-formatting nicer for build methods.\n    );\n  }\n}\n"
+        }
+    ]
+}
