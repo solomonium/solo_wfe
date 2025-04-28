@@ -1,4 +1,4 @@
-package com.example.solo_wfe
+package com.flutter.solo_wfe
 
 import io.flutter.embedding.android.FlutterActivity
 
